@@ -1,0 +1,64 @@
+
+
+body {
+  background-image: url('bg.jpg')!important;
+  font-family: 'Lato', arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #ad9320;
+}
+
+
+
+.kinfo{
+float: right;
+
+margin-top: 80px;
+margin-left: 20px;
+}
+.knjiga{
+  float: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.kgumbovi {
+  margin-top: 5px;
+
+}
+.rate {
+  float: left;
+  height: 80px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:40px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
